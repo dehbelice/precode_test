@@ -1,0 +1,134 @@
+/* Flex styles -------------------------------------------------*/
+header {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+ .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  text-align: right;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+/* Grid styles -------------------------------------------------*/
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+
+/* Generic styles ----------------------------------------------*/
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  padding: 10px;
+  font-size: 2em;
+  color: white;
+  background-color: #333;
+}
+
+.carrinho {
+    text-align: right;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.carrinho-itens {
+  position: absolute;
+  max-width: 300px;
+  right: 0;
+  top: 42px;
+  background: #333;
+}
+.carrinho-itens input {
+  width: 40px;
+}
+.linha-produto-cart {
+
+  display: grid;
+    grid-template-columns: repeat(3, minmax(95px, 1fr));
+    grid-gap: 5px;
+    text-align: center
+}
+.excluir-produto {
+  color: #f00;
+
+}
+
+@media(max-width: 728px){
+  .carrinho-item {
+    width: 100%;
+  }
+}
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+
+.produtos {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+.img-produto {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+.img-produto-cart {
+  height: 50px;
+  width: 100%;
+  object-fit: contain;
+}
+.nomeprod-cart {
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.produto-list {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.nome-produto {
+  padding: 5px;
+}
+.marca {
+  padding: 10px;
+  font-size: 14px;
+  margin: 0;
+}
+.botao-comprar {
+  display: inline-block;
+  background: #00bcd4;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.botao-comprar:hover {
+  background: #0290a2;
+}
+
